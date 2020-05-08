@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+<div class="container" style="padding-top: 20px;">
+    <div class="row">
+        <div class="col-xs-6">
+           <!--
+              写手风琴效果
+              1,注意格式，
+              2，选择器data-parent 打开当前的会关闭当前面板下的其他面板信息
+           -->
+            <div class="panel-group" id="pg">
+                <div class="panel panel-default">
+                    <H4 class="panel-title">
+                        <a href="#" data-toggle="collapse" data-target="#clp1" data-parent="#pg">
+                            手风琴效果
+                        </a>
+                    </H4>
+                    <div class="collapse panel-collapse" id="clp1">
+                        <div class="panel-body">
+                            <p>你你你好里急卡路里绿绿绿绿绿绿绿绿绿绿绿绿无无无无无无</p>
+                            <p>你你你好里急卡路里绿绿绿绿绿绿绿绿绿绿绿绿无无无无无无</p>
+                            <p>你你你好里急卡路里绿绿绿绿绿绿绿绿绿绿绿绿无无无无无无</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="../js/jquery-3.5.0.min.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/day7.js"></script>
+</body>
+</html>
