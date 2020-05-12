@@ -1,0 +1,48 @@
+.navbar-brand{
+    background: url("../img/logo.jpg") no-repeat;
+    background-size: 35px 35px;
+    background-position: 0px 14px;
+    padding-left: 40px;
+    color: #333 !important;
+    font-size:22px;
+    font-weight: bolder;
+}
+.navbar-brand{
+    color: #333;
+}
+.input-group{
+    width: 200px;
+}
+.input-group >input,
+.input-group >input:focus{
+    border: 1px #ccc solid;
+    box-shadow: none;
+    outline: none;
+}
+.input-group >input{
+    border: 1px #ccc solid;
+}
+.btn:focus,
+.btn.active:focus,
+.btn:active:focus,
+.btn:active.focus,
+.btn.active.focus{
+    outline: none;
+    box-shadow: none;
+    background:#286090;
+    border-color: #286090;
+}
+.btn:hover{
+    background:#286090;
+    border-color: #286090;
+}
+/*轮播的样式 取消nav和carousel 间隔*/
+#carousel-qhkt{
+    margin-top: -20px;
+}
+/*图片位置居中*/
+.carousel-inner >div.item{
+    height: 400px;
+    background-position: center center !important;
+    background-size: cover;/*四个值*/
+}

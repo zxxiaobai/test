@@ -8,10 +8,10 @@
 //     });
 //
 // });
-
+// $("#modaltest").on("show.bs.modal",function () {
+//     alert("刚要显示");
+// });
 $(function () {
-    $("#modaltest").on("show.bs.modal",function () {
-        alert("刚要显示");
-    });
+
 
 });
