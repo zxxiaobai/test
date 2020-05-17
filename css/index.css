@@ -46,3 +46,18 @@
     background-position: center center !important;
     background-size: cover;/*四个值*/
 }
+
+/*noinspection CssInvalidAtRule*/
+@meta(min-width:769px){
+    .carousel-inner >div.item{
+        height: 410px;
+    }
+
+}
+/*noinspection CssInvalidAtRule*/
+@meta(min-width:768px){
+    .carousel-inner >div.item{
+        height: 410px;
+    }
+
+}
