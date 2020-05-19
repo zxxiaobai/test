@@ -131,7 +131,10 @@
 .sidlebar_content>ul>li>ul>li{
     text-decoration: none;
     list-style: none;
-
+}
+.navactive{ /*选中的样式*/
+    color: #0D50EA !important;
+    font-weight: bolder !important;
 }
 /*路径导航*/
 #path_nav{
@@ -146,6 +149,6 @@
 }
 #iframe-contant{
     z-index: -1;
-    padding-left: 240px;
-    padding-top: 145px;
+    padding-left: 230px;
+    padding-top: 130px;
 }
