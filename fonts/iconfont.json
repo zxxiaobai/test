@@ -1,0 +1,65 @@
+{
+  "id": "1824378",
+  "name": "myicon",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7316261",
+      "name": "减号",
+      "font_class": "jianhao",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "11125243",
+      "name": "加号",
+      "font_class": "21",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "4854094",
+      "name": "系统设置",
+      "font_class": "xitongshezhi",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "1135950",
+      "name": "电源",
+      "font_class": "power",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "3571638",
+      "name": "windsurfing",
+      "font_class": "windsurfing",
+      "unicode": "edb3",
+      "unicode_decimal": 60851
+    },
+    {
+      "icon_id": "4922132",
+      "name": "日历",
+      "font_class": "calendar",
+      "unicode": "e665",
+      "unicode_decimal": 58981
+    },
+    {
+      "icon_id": "9000800",
+      "name": "character04",
+      "font_class": "character",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "9000812",
+      "name": "character01",
+      "font_class": "character1",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    }
+  ]
+}

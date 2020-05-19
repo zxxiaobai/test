@@ -48,14 +48,14 @@
 }
 
 /*noinspection CssInvalidAtRule*/
-@meta(min-width:769px){
+@media(min-width:769px){
     .carousel-inner >div.item{
         height: 410px;
     }
 
 }
 /*noinspection CssInvalidAtRule*/
-@meta(min-width:768px){
+@media(min-width:768px){
     .carousel-inner >div.item{
         height: 410px;
     }

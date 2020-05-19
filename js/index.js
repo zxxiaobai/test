@@ -12,19 +12,22 @@
 //     alert("刚要显示");
 // });
 $(function () {
-   var winWidth=$(window).width();//获取屏幕宽度
+changeBgImg();
+$(window).on("resize",changeBgImg());//resize监听视口大小，大小改变的时候就会触发后面指定的函数
+
+
+});
+function changeBgImg() {
+    var winWidth=$(window).width();//获取屏幕宽度
     $("#carousel-qhkt>.carousel-inner>.item").each(function (index,el) {//index 每个item el每个item选择器
         var div=$(el);//获取每个item容器信息
         //console.log(div);//打印控制台日志
         var bgimg=div.data((winWidth<=768)?"xs-img":"lg-img");//判断屏幕宽度小于，则获取小图
         if(winWidth<768){
-           div.html('<img src="'+bgimg+'" alt="carousel">');
+            div.html('<img src="'+bgimg+'" alt="carousel">');
         }else {
+            div.html("");//清空
             div.css('background','"'+bgimg+'"');//等于 "background: url('../img/1.jpg')" 字符串拼接
         }
-
-
     });
-
-
-});
+}
