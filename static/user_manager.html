@@ -2,9 +2,174 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>用户管理</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/user.css">
+    <link rel="stylesheet" href="../fonts/iconfont.css">
+    <link rel="stylesheet" href="../css/bootstrap-datetimepicker.min.css">
 </head>
 <body>
-用户管理
+<div class="container-fluid">
+    <div class="row">
+        <div class="search_title_bar">搜索</div>
+    </div>
+    <div class="row">
+        <form id="search_form" class="form-inline">
+            <div class="form-group has-feedback">
+                <label>报名时间:</label>
+                <input type="text" class="form-control input-sm form_datetime" name="regCourseStartTime">
+                <span class="iconfont form-control-feedback">&#xe8cc;</span>
+            </div>
+            <div class="form-group has-feedback">
+                <label>至</label>
+                <input type="text" class="form-control input-sm form_datetime" name="regCourseEndTime">
+                <span class="iconfont  form-control-feedback">&#xe8cc;</span>
+            </div>
+            &nbsp;
+            <div class="form-group">
+                <label>用户名:</label>
+                <input type="text" class="form-control input-sm" name="regCourse" placeholder="用户名">
+            </div>
+            &nbsp;
+            <div class="form-group">
+                <label>用户信息:</label>
+                <input type="text" class="form-control input-sm" name="userInfo" placeholder="用户信息">
+            </div>
+        </form>
+    </div>
+    <div id="search_btn" class="row text-right">
+        <button type="button" class="btn btn-default">查询</button>
+        <button type="button" class="btn btn-default">添加</button>
+        <button type="button" class="btn btn-default">删除</button>
+        <button type="button" class="btn btn-default">导入</button>
+        <button type="button" class="btn btn-default">导出</button>
+    </div>
+    <div id="content_table" class="row">
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+                <tr>
+                    <td style="width: 30px;"><input type="checkbox" name="allcheck" id="allcheck" class="chkall" onclick="chkall();"></td>
+                    <td>用户名</td>
+                    <td>手机号</td>
+                    <td>邮箱地址</td>
+                    <td>角色</td>
+                    <td>用户状态</td>
+                    <td style="width: 100px">操作</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="chkuser" class="chkone" onclick="chkone();"></td>
+                    <td>用户名</td>
+                    <td>手机号</td>
+                    <td>邮箱地址</td>
+                    <td>角色</td>
+                    <td>用户状态</td>
+                    <td><a href="#">编辑</a><a href="#">删除</a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="chkuser" class="chkone" onclick="chkone();"></td>
+                    <td>用户名</td>
+                    <td>手机号</td>
+                    <td>邮箱地址</td>
+                    <td>角色</td>
+                    <td>用户状态</td>
+                    <td><a href="#">编辑</a><a href="#">删除</a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="chkuser" class="chkone" onclick="chkone();"></td>
+                    <td>用户名</td>
+                    <td>手机号</td>
+                    <td>邮箱地址</td>
+                    <td>角色</td>
+                    <td>用户状态</td>
+                    <td><a href="#">编辑</a><a href="#">删除</a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="chkuser" class="chkone" onclick="chkone();"></td>
+                    <td>用户名</td>
+                    <td>手机号</td>
+                    <td>邮箱地址</td>
+                    <td>角色</td>
+                    <td>用户状态</td>
+                    <td><a href="#">编辑</a><a href="#">删除</a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="chkuser" class="chkone" onclick="chkone();"></td>
+                    <td>用户名</td>
+                    <td>手机号</td>
+                    <td>邮箱地址</td>
+                    <td>角色</td>
+                    <td>用户状态</td>
+                    <td><a href="#">编辑</a><a href="#">删除</a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="chkuser" class="chkone" onclick="chkone();"></td>
+                    <td>用户名</td>
+                    <td>手机号</td>
+                    <td>邮箱地址</td>
+                    <td>角色</td>
+                    <td>用户状态</td>
+                    <td><a href="#">编辑</a><a href="#">删除</a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="chkuser" class="chkone" onclick="chkone();"></td>
+                    <td>用户名</td>
+                    <td>手机号</td>
+                    <td>邮箱地址</td>
+                    <td>角色</td>
+                    <td>用户状态</td>
+                    <td><a href="#">编辑</a><a href="#">删除</a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="chkuser" class="chkone" onclick="chkone();"></td>
+                    <td>用户名</td>
+                    <td>手机号</td>
+                    <td>邮箱地址</td>
+                    <td>角色</td>
+                    <td>用户状态</td>
+                    <td><a href="#">编辑</a><a href="#">删除</a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="chkuser" class="chkone" onclick="chkone();"></td>
+                    <td>用户名</td>
+                    <td>手机号</td>
+                    <td>邮箱地址</td>
+                    <td>角色</td>
+                    <td>用户状态</td>
+                    <td><a href="#">编辑</a><a href="#">删除</a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="chkuser" class="chkone" onclick="chkone();"></td>
+                    <td>用户名</td>
+                    <td>手机号</td>
+                    <td>邮箱地址</td>
+                    <td>角色</td>
+                    <td>用户状态</td>
+                    <td><a href="#">编辑</a><a href="#">删除</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="pager" class="row">
+        <p class="pull-left">总共有<span>90</span>条记录,当前页<span> 1/9</span>页</p>
+        <div class="btn-group pull-right">
+            <button type="button" class="btn btn-default">首页</button>
+            <button type="button" class="btn btn-default">上一页</button>
+            <button type="button" class="btn btn-default">下一页</button>
+            <button type="button" class="btn btn-default">尾页</button>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="../js/jquery214.min.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="../js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+<script type="text/javascript" src="../js/user.js"></script>
 </body>
 </html>
