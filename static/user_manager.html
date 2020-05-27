@@ -39,7 +39,7 @@
     </div>
     <div id="search_btn" class="row text-right">
         <button type="button" class="btn btn-default">查询</button>
-        <button type="button" class="btn btn-default">添加</button>
+        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#addUserModal">添加</button>
         <button type="button" class="btn btn-default">删除</button>
         <button type="button" class="btn btn-default">导入</button>
         <button type="button" class="btn btn-default">导出</button>
@@ -63,7 +63,7 @@
                     <td>邮箱地址</td>
                     <td>角色</td>
                     <td>用户状态</td>
-                    <td><a href="#">编辑</a><a href="#">删除</a></td>
+                    <td><a href="#updateUserModal" data-toggle="modal">编辑</a><a href="#">删除</a></td>
                 </tr>
                 <tr>
                     <td><input type="checkbox" name="chkuser" class="chkone" onclick="chkone();"></td>
@@ -160,7 +160,78 @@
 
     </div>
 </div>
+<!-- Modal 添加 -->
+<div class="modal fade" id="addUserModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">添加用户</h4>
+            </div>
+            <div class="modal-body">
+                <form action="#">
+                    <div class="form-group">
+                        <label>用户名:</label>
+                        <input type="text" name="userName" class="form-control" placeholder="用户名">
+                    </div>
+                    <div class="form-group">
+                        <label>密码:</label>
+                        <input type="text" name="userName" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>手机号:</label>
+                        <input type="text" name="userName" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>邮箱:</label>
+                        <input type="text" name="userName" class="form-control">
+                    </div>
+                </form>
 
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary">新增</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal 修改 -->
+<div class="modal fade" id="updateUserModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span></button>
+                <h4 class="modal-title" >修改用户</h4>
+            </div>
+            <div class="modal-body">
+                <form action="#">
+                    <div class="form-group">
+                        <label>用户名:</label>
+                        <input type="text" name="userName" class="form-control" value="xiaobai">
+                    </div>
+                    <div class="form-group">
+                        <label>密码:</label>
+                        <input type="text" name="userName" class="form-control" value="123">
+                    </div>
+                    <div class="form-group">
+                        <label>手机号:</label>
+                        <input type="text" name="userName" class="form-control" value="133sss">
+                    </div>
+                    <div class="form-group">
+                        <label>邮箱:</label>
+                        <input type="text" name="userName" class="form-control" value="123@qq.com">
+                    </div>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary">修改</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
